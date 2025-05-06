@@ -223,7 +223,7 @@ const Home = () => {
             </section>
 
             <section className="availability-section">
-                <h2>Real-Time Availability</h2>
+                <h2>Availability</h2>
                 <div className="availability-grid">
                     <div className="availability-card">
                         <div className="car-image sedan"></div>
