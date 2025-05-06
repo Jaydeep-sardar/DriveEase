@@ -1,0 +1,166 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header nav ul li {
+  margin: 0;
+  position: relative;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.header nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header nav ul li a:hover {
+  color: #4CAF50;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #4CAF50;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Auth Buttons Styling */
+.auth-buttons {
+  margin-left: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-signin,
+.btn-signup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.btn-signin {
+  color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.08);
+  border: 2px solid #4CAF50;
+}
+
+.btn-signin:hover {
+  background-color: rgba(76, 175, 80, 0.15);
+  transform: translateY(-2px);
+  color: #45a049;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
+}
+
+.btn-signup {
+  color: white;
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  border: none;
+}
+
+.btn-signup:hover {
+  background: linear-gradient(45deg, #45a049, #4CAF50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.25);
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header nav ul {
+    gap: 1.5rem;
+  }
+
+  .auth-buttons {
+    margin-left: 1.5rem;
+    gap: 0.8rem;
+  }
+
+  .btn-signin,
+  .btn-signup {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .auth-buttons {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-signin,
+  .btn-signup {
+    flex: 1;
+    justify-content: center;
+    max-width: 200px;
+    padding: 0.8rem 1.2rem;
+  }
+}

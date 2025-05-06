@@ -1,0 +1,69 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #45a049;
+}
+
+:root {
+  /* Primary Colors */
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-light: #dbeafe;
+
+  /* Secondary Colors */
+  --secondary-color: #10b981;
+  --secondary-hover: #059669;
+  --secondary-light: #d1fae5;
+
+  /* Accent Colors */
+  --accent-color: #8b5cf6;
+  --accent-hover: #7c3aed;
+  --accent-light: #ede9fe;
+
+  /* Neutral Colors */
+  --background-color: #f0fdf4;
+  --card-background: #ffffff;
+  --text-color: #2c3e50;
+  --text-light: #6b7280;
+  --border-color: #e4e8f0;
+
+  /* UI Elements */
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}

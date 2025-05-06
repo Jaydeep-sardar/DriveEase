@@ -1,0 +1,38 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-container h2 {
+    margin-top: 20px;
+    color: #4CAF50;
+  }
+  
+  .about-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+  }
+  
+  .about-container a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .about-container a:hover {
+    text-decoration: underline;
+  }
