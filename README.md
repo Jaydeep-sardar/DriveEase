@@ -85,7 +85,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🙏 Thank You
 
-Thank you for checking out **DriveEase**! We hope you enjoy using the platform as much as we enjoyed building it. Your feedback and support mean a lot!
+Thank you for checking out **DriveEase**! I hope you enjoy using the platform as much as I enjoyed building it. Your feedback and support mean a lot!
 
 ---
 
